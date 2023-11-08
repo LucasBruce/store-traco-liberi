@@ -6,6 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test": "vue-cli-service test:unit",
+    "test-watch-mode": "vue-cli-service test:unit jest --watchAll",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
