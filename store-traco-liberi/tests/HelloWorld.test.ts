@@ -17,7 +17,6 @@ describe("HelloWorld", () => {
   });
 
   it("renders props.msg when passed", () => {
-    let vari: any;
     spyLocal = SpyGlobal();
     expect(spyLocal.spyComponent.props()).toEqual({ msg: "new message" });
   });
