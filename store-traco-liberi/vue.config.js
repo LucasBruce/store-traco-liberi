@@ -26,7 +26,6 @@ if (process.env.NODE_ENV === "production") {
 }
 
 module.exports = defineConfig({
-  publicPath: process.env.NODE_ENV,
   configureWebpack: {
     plugins: [analyzer],
   },
