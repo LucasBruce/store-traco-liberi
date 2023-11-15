@@ -1,12 +1,13 @@
 {
   "name": "store-traco-liberi",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "test": "vue-cli-service test:unit",
-    "test-watch-mode": "vue-cli-service test:unit jest --watchAll",
+    "start": "vue-cli-service lint && vue-cli-service serve",
+    "start:ignore": "vue-cli-service serve",
+    "build": "vue-cli-service lint && vue-cli-service test:unit && vue-cli-service build --mode production",
+    "test": "vue-cli-service lint && vue-cli-service test:unit",
+    "test:watch": "vue-cli-service lint && vue-cli-service test:unit jest --watchAll",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -28,18 +29,19 @@
     "@vue/cli-plugin-vuex": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
     "@vue/eslint-config-typescript": "^9.1.0",
-    "@vue/test-utils": "^2.4.1",
+    "@vue/test-utils": "^2.0.0-0",
     "@vue/vue3-jest": "^27.0.0-alpha.1",
     "babel-jest": "^27.0.6",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^8.0.3",
-    "jest": "^27.5.1",
+    "jest": "^27.0.5",
     "prettier": "^2.4.1",
     "sass": "^1.32.7",
     "sass-loader": "^12.0.0",
     "ts-jest": "^27.0.4",
-    "typescript": "~4.5.5"
+    "typescript": "~4.5.5",
+    "webpack-bundle-analyzer": "^4.9.1"
   }
 }

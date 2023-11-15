@@ -7,7 +7,12 @@ npm install
 
 ### Compiles and hot-reloads for development
 ```
-npm run serve
+npm run start
+```
+
+### Compiles and hot-reloads for development ignoring lint
+```
+npm run start:ignore
 ```
 
 ### Compiles and minifies for production
@@ -22,7 +27,7 @@ npm run test
 
 ### Run your unit tests watch mode
 ```
-npm run tests-watch-mode
+npm run test:watch
 ```
 
 ### Lints and fixes files
